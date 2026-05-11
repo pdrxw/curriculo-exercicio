@@ -8,21 +8,10 @@
     overflow: hidden;
 }
 
-.content-vertical-line::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50px;
-    width: 2px;
-    background-color: var(--black);
-    height: 100%;
-    z-index: 1;
-}
-
 .content-title-container {
     width: 100%;
     height: 150px;
-    background-color: var(--light-gray);
+    background-color: var(--gray-header);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,24 +63,24 @@
 
 .content-job-title {
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 0.875em;
     font-weight: 700;
 }
 
 .content-job-duration {
-    font-size: 0.875em;
+    font-size: 0.75em;
     font-weight: 600;
 }
 
 .content-job-role {
-    font-size: 1em;
+    font-size: 0.875em;
     font-weight: 500;
     font-style: italic;
     margin-top: 0.35em;
 }
 
 .content-job-description {
-    margin-top: 1em;
+    margin-top: 0.875em;
     font-size: 0.93em;
 }
 

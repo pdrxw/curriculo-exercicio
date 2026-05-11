@@ -13,8 +13,8 @@
 }
 
 .large-icon-background {
-    width: 2em;
-    height: 2em;
+    width: 1.75em;
+    height: 1.75em;
     background-color: var(--white);
     color: var(--dark-gray);
     border-radius: 50%;
@@ -27,8 +27,8 @@
 }
 
 .large-gold-icon-background {
-    width: 2em;
-    height: 2em;
+    width: 1.75em;
+    height: 1.75em;
     background-color: var(--yellow);
     color: var(--black);
     border-radius: 50%;
