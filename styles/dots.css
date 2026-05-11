@@ -1,0 +1,9 @@
+.small-dot::after {
+    content: '';
+    width: 0.8em;
+    height: 0.8em;
+    background-color: var(--yellow);
+    border-radius: 100%;
+    position: absolute;
+    left: -22px;
+}
