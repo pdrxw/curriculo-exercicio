@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('./icons.css');
 @import url('./dots.css');
+@import url('./content.css');
 
 :root {
     --white: #ffffff;
@@ -19,6 +20,7 @@ body {
      justify-content: center;
      font-family: var(--montserrat);
      font-size: 16px;
+     font-weight: 400;
 }
 
 .container {
@@ -30,14 +32,15 @@ body {
 }
 
 .container .sidebar {
-    width: 35%;
-    padding: 3.5em;
+    width: 30%;
+    padding: 5em 3.5em;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--dark-gray);
     color: var(--white);
     position: relative;
+    overflow: hidden;
 }
 
 .container .sidebar-vertical-line::before {
@@ -53,7 +56,7 @@ body {
 .container .sidebar-horizontal-line {
     width: 100%;
     height: 0px;    
-    margin: 2.5em 0;
+    margin: 2.2em 0;
     border: 1px dashed var(--font-gray);
 }
 
@@ -62,15 +65,16 @@ body {
     height: 140px;
     border-radius: 50% 50% 50% 0;
     border: 0.4em solid var(--white);
+    z-index: 1;
 }
 
 .container .sidebar .sidebar-content {
     text-align: left;
-    margin-top: 1.25em;
+    margin-top: 3em;
 }
 
 .container .sidebar .sidebar-title {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -79,33 +83,26 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5em;
-    margin-top: 1.5em;
+    margin-top: 1em;
     position: relative;
 }
 
 .container .sidebar .sidebar-list {
     margin-left: 0.3em;
+    line-height: 1.5;
+}
+
+.container .sidebar .sidebar-list-title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 2;
+    display: flex;
+    align-items: center;
 }
 
 .container .sidebar .sidebar-item {
     color: var(--font-gray);
-    font-size: 14px;
-}
-
-.container .content {
-    width: 65%;
-    padding: 3.5em;
-    background-color: var(--white);
-    color: var(--dark-gray);
-    position: relative;
-}
-
-.container .content-vertical-line::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 5px;
-    width: 1px;
-    background-color: var(--black);
-    height: 100%;
+    font-size: 12px;
+    font-weight: 500px;
 }

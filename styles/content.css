@@ -1,0 +1,132 @@
+
+.content {
+    width: 70%;
+    background-color: var(--white);
+    color: var(--dark-gray);
+    position: relative;
+    padding: 5em 0 0 0;
+    overflow: hidden;
+}
+
+.content-vertical-line::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 2px;
+    background-color: var(--black);
+    height: 100%;
+    z-index: 1;
+}
+
+.content-title-container {
+    width: 100%;
+    height: 150px;
+    background-color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5em;
+    position: relative;
+}
+
+.content-title {
+    font-size: 2em;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-left: 2.2em;
+}
+
+.content-title-bold {
+    color: var(--yellow);
+}
+
+.content-description {
+    margin-left: 4.4em;
+}
+
+.content-topics {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.content-topics-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+    padding: 2.2em 2.5em 2.2em 5em;
+}
+
+.content-topics-icon {
+    display: flex;
+    gap: 0.5em;
+}
+
+.content-job-header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.content-job-title {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.content-job-duration {
+    font-size: 0.875em;
+    font-weight: 600;
+}
+
+.content-job-role {
+    font-size: 1em;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 0.35em;
+}
+
+.content-job-description {
+    margin-top: 1em;
+    font-size: 0.93em;
+}
+
+.content-skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, 7.3em);
+    gap: 1em 5em;
+}
+
+.content-skills-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.625em;;
+    font-weight: 600;
+    gap: 5px;
+    position: relative;
+}
+
+.content-skills-bar::after {
+    content: '';
+    position: absolute;
+    height: 0.5em;
+    width: 6em;
+    background-color: var(--light-gray);
+    border-radius: 5px;
+    left: 115px;
+}
+
+.content-skills-fill::before {
+    content: '';
+    position: absolute;
+    height: 0.5em;
+    width: 4.5em;
+    background-color: var(--yellow);
+    border-radius: 5px;
+    left: 115px;
+    z-index: 1;
+}
