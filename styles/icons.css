@@ -1,33 +1,13 @@
-.icon-background::before {
-    content: '';
+.icon-background {
     width: 24px;
     height: 24px;
     background-color: var(--white);
-    border-radius: 100%;
     color: var(--dark-gray);
-    position: absolute;
-    left: -3px;
-    /* display: flex;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
-    align-items: center; */
-}
-
-.fa-phone-volume, .fa-globe, .fa-location-dot {
-    width: 16px;
-    height: 16px;
-    color: var(--dark-gray);
-    /* color: red; */
-    z-index: 1;
-}
-
-.fa-circle-user {
-    font-size: 24px;
-}
-
-.fa-globe {
-    margin-left: 1px;
-}
-
-.fa-location-dot {
-    margin-left: 3px;
+    font-size: 12px;
+    line-height: 1;
+    flex-shrink: 0;
 }
